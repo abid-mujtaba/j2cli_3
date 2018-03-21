@@ -12,7 +12,7 @@ import j2cli.extras.filters
 README = {
     'formats': {
         name: doc(f)
-        for name, f in j2cli.context.FORMATS.items()
+        for name, f in list(j2cli.context.FORMATS.items())
     },
     'extras': {
         'filters': [doc(v)
@@ -21,4 +21,4 @@ README = {
     }
 }
 
-print json.dumps(README)
+print(json.dumps(README))

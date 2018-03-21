@@ -104,16 +104,13 @@ def _parse_env(data_string):
     This is especially useful with Docker to link containers together.
     """
     # Parse
-    if isinstance(data_string, basestring):
-        data = filter(
-            lambda l: len(l) == 2 ,
-            (
-                map(
+    if isinstance(data_string, str):
+        data = [l for l in (
+                list(map(
                     str.strip,
                     line.split('=')
-                )
-                for line in data_string.split("\n"))
-        )
+                ))
+                for line in data_string.split("\n")) if len(l) == 2]
     else:
         data = data_string
 
@@ -145,7 +142,7 @@ except ImportError:
 
 # INI: Python 2 | Python 3
 try:
-    import ConfigParser
+    import configparser
 except ImportError:
     import configparser as ConfigParser
 

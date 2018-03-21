@@ -54,7 +54,6 @@ setup(
         'Operating System :: OS Independent',
         'Topic :: Software Development',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        #'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3',
     ],
 )
