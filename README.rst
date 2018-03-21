@@ -1,9 +1,9 @@
 |Build Status|
 
-j2cli3 - Jinja2 Command-Line Tool
+j2cliPy3 - Jinja2 Command-Line Tool
 ================================
 
-``j2cli3`` is a command-line tool for templating in shell-scripts,
+``j2cliPy3`` is a command-line tool for templating in shell-scripts,
 leveraging the `Jinja2 <http://jinja.pocoo.org/docs/>`__ library.
 
 Features:
@@ -21,13 +21,13 @@ Installation
 
 ::
 
-    pip3 install j2cli3
+    pip3 install j2cliPy3
 
 To enable the YAML support with `pyyaml <http://pyyaml.org/>`__:
 
 ::
 
-    pip3 install j2cli3[yaml]
+    pip3 install j2cliPy3[yaml]
 
 Usage
 -----
@@ -220,5 +220,5 @@ And then uses ``format`` to format it, where the default format is
 More info here: `Docker
 Links <https://docs.docker.com/userguide/dockerlinks/>`__
 
-.. |Build Status| image:: https://travis-ci.org/leumas95/j2cli3.svg
-   :target: https://travis-ci.org/leumas95/j2cli3
+.. |Build Status| image:: https://travis-ci.org/leumas95/j2cliPy3.svg
+   :target: https://travis-ci.org/leumas95/j2cliPy3

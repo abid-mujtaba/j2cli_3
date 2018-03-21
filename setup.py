@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-j2cli3
+j2cliPy3
 ==========
 
 Command-line interface to [Jinja2](http://jinja.pocoo.org/docs/) for templating in shell scripts.
@@ -17,11 +17,11 @@ Based on [kolypto/j2cli](https://github.com/kolypto/j2cli)
 from setuptools import setup, find_packages
 
 setup(
-    name='j2cli3',
+    name='j2cli_3',
     version='0.0.1',
     author='Samuel Windall',
     author_email='samuel.windall@gmail.com',
-    url='https://github.com/leumas95/j2cli3',
+    url='https://github.com/leumas95/j2cliPy3',
     license='BSD',
     description='Command-line interface to Jinja2 for templating in shell scripts.',
     long_description=__doc__,
@@ -30,7 +30,7 @@ setup(
     scripts=[],
     entry_points={
         'console_scripts': [
-            'j2 = j2cli3:main',
+            'j2 = j2cliPy3:main',
         ]
     },
     install_requires=[
