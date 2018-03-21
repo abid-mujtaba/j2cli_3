@@ -1,9 +1,17 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 install:
-  - pip3 install tox
+- pip3 install tox
 script:
-  - tox
+- tox
 env:
-  - TOXENV=py36
+- TOXENV=py36
+deploy:
+  provider: pypi
+  user: leumas95
+  on:
+    tags: true
+    branch: master
+  password:
+    secure: HtyEFteOtrRpjK3+AojeE9x2IFmD2vCAPiE35fOGWpLmNRtiKU7jVDKArihcyjZiQj8rZloYVKUuHY+OhhAOVPqaaosb1c6wQ2XAQWrGdRqSgRLdJbTQl5w555JqSeDgg+fUI959Rlfb8mUBfOLgE8sdHhP9rg1AAnxiFYTb22zoGhRt9alSEKuoynrk+9PpQcoB/vTIUpquMHc6c4RbyFUqQ1Rl/3gqx/uiTsEGk9OB88I4xqQPKYm+XtK8m/xdpTM7/oOtApXuPoxVrDtkWnEXKIUO0ZHmbUXE2Y0lWztDBh8TU6BXv5d58Q8FVN7xiPQjTtOY9kT9ATMLA75DbMuLZWfEzl8DkHmHDcVI4TJ6uIn+yYvmU6YKjLSpquMjAmuwRwiWL33qYjdjS9/CGy9yP0lJLQ9sJG7vGYapSTP5z4dZ8Vn3QrDinCzO281TvatVSJYO3oYLP1sLdOH5E4VKZIdSe5sd5wWgH09mTOU6Kct0CZOp6U9OqJcEF40HNsxW/OTPtSqvgZ56j/AQs+/iswz8VbC+jdhnBZ8hmQYEkltXBhVi8coFumnX3k3BLKq4mavkiqmcE0BGBE0spHJn+jdZ/Br9G3K2QxIheRpktxRWFLdeUjTrJ0MIx1Ug+AZMfaxRVjhcFQQXHHD4qdLzgoUA786Ot6I4QVGxJSw=
