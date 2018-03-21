@@ -1,30 +1,5 @@
 import sys
 
-#region Imports
-
-# JSON: simplejson | json
-try:
-    import simplejson as json
-except ImportError:
-    try:
-        import json
-    except ImportError:
-        del FORMATS['json']
-
-# INI: Python 2 | Python 3
-try:
-    import configparser
-except ImportError:
-    import configparser as ConfigParser
-
-# YAML
-try:
-    import yaml
-except ImportError:
-    del FORMATS['yaml']
-
-#endregion
-
 #region Parsers
 
 def _parse_ini(data_string):
@@ -151,6 +126,35 @@ FORMATS = {
 }
 
 #endregion
+
+
+
+#region Imports
+
+# JSON: simplejson | json
+try:
+    import simplejson as json
+except ImportError:
+    try:
+        import json
+    except ImportError:
+         del FORMATS['json']
+
+# INI: Python 2 | Python 3
+try:
+    import ConfigParser
+except ImportError:
+    import configparser as ConfigParser
+
+# YAML
+try:
+    import yaml
+except ImportError:
+    del FORMATS['yaml']
+
+#endregion
+
+
 
 def read_context_data(format, f, environ):
     """ Read context data into a dictionary
