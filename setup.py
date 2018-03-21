@@ -30,7 +30,7 @@ setup(
     scripts=[],
     entry_points={
         'console_scripts': [
-            'j2 = j2cli:main',
+            'j2 = j2cli3:main',
         ]
     },
     install_requires=[
