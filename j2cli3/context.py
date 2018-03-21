@@ -19,7 +19,7 @@ def _parse_ini(data_string):
         $ j2 config.j2 data.ini
         $ cat data.ini | j2 --format=ini config.j2
     """
-    from io import BytesIO
+    from io import StringIO
 
     # Override
     class MyConfigParser(ConfigParser.ConfigParser):
@@ -35,7 +35,7 @@ def _parse_ini(data_string):
 
     # Parse
     ini = MyConfigParser()
-    ini.readfp(BytesIO(data_string))
+    ini.readfp(ini_file_io(data_string))
 
     # Export
     return ini.as_dict()
@@ -143,8 +143,10 @@ except ImportError:
 # INI: Python 2 | Python 3
 try:
     import ConfigParser
+    from io import BytesIO as ini_file_io
 except ImportError:
     import configparser as ConfigParser
+    from io import StringIO as ini_file_io
 
 # YAML
 try:
