@@ -1,7 +1,7 @@
 import unittest
 import os.path
 
-from j2cliPy3.cli import render_command
+from j2cli_3.cli import render_command
 
 class RenderTest(unittest.TestCase):
     def setUp(self):

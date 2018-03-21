@@ -73,7 +73,7 @@ def render_command(cwd, environ, stdin, argv):
         epilog=''
     )
     parser.add_argument('-v', '--version', action='version',
-                        version='j2cliPy3 {}, Jinja2 {}'.format(__version__, jinja2.__version__))
+                        version='j2cli_3 {}, Jinja2 {}'.format(__version__, jinja2.__version__))
 
     parser.add_argument('-f', '--format', default='?', help='Input data format', choices=['?'] + list(FORMATS.keys()))
     parser.add_argument('template', help='Template file to process')

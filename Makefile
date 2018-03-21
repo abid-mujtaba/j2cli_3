@@ -6,7 +6,7 @@ SHELL := /bin/bash
 # Package
 clean:
 	@rm -rf build/ dist/ *.egg-info/ README.md README.rst
-README.md: $(shell find misc/ j2cliPy3/)
+README.md: $(shell find misc/ j2cli_3/)
 	@python misc/_doc/README.py | j2 -f json misc/_doc/README.md.j2 > $@
 README.rst: README.md
 	@pandoc -f markdown -t rst -o README.rst README.md

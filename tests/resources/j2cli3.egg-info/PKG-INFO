@@ -1,13 +1,13 @@
 Metadata-Version: 1.1
-Name: j2cliPy3
+Name: j2cli_3
 Version: 0.0.1
 Summary: Command-line interface to Jinja2 for templating in shell scripts.
-Home-page: https://github.com/leumas95/j2cliPy3
+Home-page: https://github.com/leumas95/j2cli_3
 Author: Samuel Windall
 Author-email: samuel.windall@gmail.com
 License: BSD
 Description: 
-        j2cliPy3
+        j2cli_3
         ==========
         
         Command-line interface to [Jinja2](http://jinja.pocoo.org/docs/) for templating in shell scripts.
