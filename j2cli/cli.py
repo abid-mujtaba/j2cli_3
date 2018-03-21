@@ -23,7 +23,7 @@ class FilePathLoader(jinja2.BaseLoader):
         # Read
         try:
             with open(template, 'r') as f:
-                contents = f.read().decode(self.encoding)
+                contents = f.read()
         except IOError:
             raise jinja2.TemplateNotFound(template)
 
@@ -51,8 +51,7 @@ def render_template(cwd, template_path, context):
 
     return env \
         .get_template(template_path) \
-        .render(context) \
-        .encode('utf-8')
+        .render(context)
 
 
 def render_command(cwd, environ, stdin, argv):
