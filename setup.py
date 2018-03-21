@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-j2cli
+j2cli3
 ==========
 
 Command-line interface to [Jinja2](http://jinja.pocoo.org/docs/) for templating in shell scripts.
@@ -11,23 +11,21 @@ Features:
 * Allows to use environment variables! Hello [Docker](http://www.docker.com/) :)
 * INI, YAML, JSON data sources supported
 
-Inspired by [mattrobenolt/jinja2-cli](https://github.com/mattrobenolt/jinja2-cli)
+Based on [kolypto/j2cli](https://github.com/kolypto/j2cli)
 """
 
 from setuptools import setup, find_packages
 
 setup(
-    name='j2cli',
-    version='0.3.1-0',
-    author='Mark Vartanyan',
-    author_email='kolypto@gmail.com',
-
-    url='https://github.com/kolypto/j2cli',
+    name='j2cli3',
+    version='0.0.0',
+    author='Samuel Windall',
+    author_email='samuel.windall@gmail.com',
+    url='https://github.com/leumas95/j2cli3',
     license='BSD',
     description='Command-line interface to Jinja2 for templating in shell scripts.',
     long_description=__doc__,
     keywords=['Jinja2', 'templating', 'command-line', 'CLI'],
-
     packages=find_packages(),
     scripts=[],
     entry_points={
@@ -35,7 +33,6 @@ setup(
             'j2 = j2cli:main',
         ]
     },
-
     install_requires=[
         'jinja2 >= 2.7.2',
     ],
@@ -45,7 +42,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     test_suite='nose.collector',
-
     platforms='any',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

@@ -1,9 +1,9 @@
 |Build Status|
 
-j2cli - Jinja2 Command-Line Tool
+j2cli3 - Jinja2 Command-Line Tool
 ================================
 
-``j2cli`` is a command-line tool for templating in shell-scripts,
+``j2cli3`` is a command-line tool for templating in shell-scripts,
 leveraging the `Jinja2 <http://jinja.pocoo.org/docs/>`__ library.
 
 Features:
@@ -13,21 +13,21 @@ Features:
    `Docker <http://www.docker.com/>`__ :)
 -  INI, YAML, JSON data sources supported
 
-Inspired by
-`mattrobenolt/jinja2-cli <https://github.com/mattrobenolt/jinja2-cli>`__
+Based on
+`kolypto/j2cli <https://github.com/kolypto/j2cli>`__
 
 Installation
 ------------
 
 ::
 
-    pip install j2cli
+    pip3 install j2cli3
 
 To enable the YAML support with `pyyaml <http://pyyaml.org/>`__:
 
 ::
 
-    pip install j2cli[yaml]
+    pip3 install j2cli3[yaml]
 
 Usage
 -----
@@ -220,5 +220,5 @@ And then uses ``format`` to format it, where the default format is
 More info here: `Docker
 Links <https://docs.docker.com/userguide/dockerlinks/>`__
 
-.. |Build Status| image:: https://travis-ci.org/kolypto/j2cli.svg
-   :target: https://travis-ci.org/kolypto/j2cli
+.. |Build Status| image:: https://travis-ci.org/leumas95/j2cli3.svg
+   :target: https://travis-ci.org/leumas95/j2cli3

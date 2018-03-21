@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/kolypto/j2cli.svg)](https://travis-ci.org/kolypto/j2cli)
+[![Build Status](https://travis-ci.org/leumas95/j2cli3.svg)](https://travis-ci.org/leumas95/j2cli3)
 
-j2cli - Jinja2 Command-Line Tool
+j2cli3 - Jinja2 Command-Line Tool
 ================================
 
-`j2cli` is a command-line tool for templating in shell-scripts, 
+`j2cli3` is a command-line tool for templating in shell-scripts, 
 leveraging the [Jinja2](http://jinja.pocoo.org/docs/) library.
 
 Features:
@@ -12,18 +12,18 @@ Features:
 * Allows to use environment variables! Hello [Docker](http://www.docker.com/) :)
 * INI, YAML, JSON data sources supported
 
-Inspired by [mattrobenolt/jinja2-cli](https://github.com/mattrobenolt/jinja2-cli)
+Based on [kolypto/j2cli](https://github.com/kolypto/j2cli)
 
 ## Installation
 
 ```
-pip install j2cli
+pip3 install j2cli3
 ```
 
 To enable the YAML support with [pyyaml](http://pyyaml.org/):
 
 ```
-pip install j2cli[yaml]
+pip3 install j2cli3[yaml]
 ```
 
 ## Usage

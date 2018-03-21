@@ -4,19 +4,19 @@ import json
 import inspect
 from exdoc import doc, getmembers
 
-import j2cli
-import j2cli.context
-import j2cli.extras.filters
+import j2cli3
+import j2cli3.context
+import j2cli3.extras.filters
 
 
 README = {
     'formats': {
         name: doc(f)
-        for name, f in list(j2cli.context.FORMATS.items())
+        for name, f in list(j2cli3.context.FORMATS.items())
     },
     'extras': {
         'filters': [doc(v)
-                    for k, v in getmembers(j2cli.extras.filters)
+                    for k, v in getmembers(j2cli3.extras.filters)
                     if inspect.isfunction(v)]
     }
 }
