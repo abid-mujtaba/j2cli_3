@@ -18,7 +18,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='j2cli3',
-    version='0.0.0',
+    version='0.0.1',
     author='Samuel Windall',
     author_email='samuel.windall@gmail.com',
     url='https://github.com/leumas95/j2cli3',
