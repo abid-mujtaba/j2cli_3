@@ -43,6 +43,7 @@ def render_template(cwd, template_path, context):
     """
     env = jinja2.Environment(
         loader=FilePathLoader(cwd),
+        keep_trailing_newline=True,
         undefined=jinja2.StrictUndefined # raises errors for undefined variables
     )
 
